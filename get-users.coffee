@@ -13,6 +13,10 @@ BANNED = [
   'hintjens'      # Graffiti.
 ]
 
+INCLUDED = [
+  "F0xedb"
+]
+
 saveTopLogins = ->
   MIN_FOLLOWERS = 435
   MAX_PAGES = 10
@@ -28,6 +32,7 @@ saveTopLogins = ->
     logins = [].concat.apply [], all
     filtered = logins.filter (name) ->
       name not in BANNED
+    filtered.push(INCLUDED[0])
     utils.writeStats './temp-logins.json', filtered
 
 saveTopLogins()
