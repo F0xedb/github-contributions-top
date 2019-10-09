@@ -1,6 +1,6 @@
 # GitHub top users
 
-# Most active GitHub users ([git.io/top](http://git.io/top))
+# Most active GitHub users ([repository](https://github.com/F0xedb/github-contributions-top))
 
 The count of contributions (summary of Pull Requests, opened issues and commits) to public repos at GitHub.com from **Sat, 06 Oct 2018 18:20:44 GMT** till **Sun, 06 Oct 2019 18:20:44 GMT**.
 
