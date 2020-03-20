@@ -1,4 +1,5 @@
 all: get format
+full: get format sync-default
 get: 1 2
 format: 3
 
@@ -28,6 +29,13 @@ force-sync-raw:
 
 sync-formatted:
 	cd formatted && git commit -am 'Sync.' --amend && git push --force
+
+sync-default:
+	mv formatted/active.md README.md
+	git add .
+	git commit -m "Update stats."
+	git push origin master
+
 
 clean:
 	rm temp-logins.json
